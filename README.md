@@ -9,7 +9,7 @@ contracts, and resolver probes that fail before any provider call.
 
 [Read the series](https://ruslanakchurin.dev/blog/making-iac-boring/) |
 [Run the demo](#run-it) |
-[Watch the recordings](#guided-recordings)
+[Watch the recordings](#recordings)
 
 No provider SDKs, credentials, live domains, or production configuration are
 used. Domains use the reserved `.invalid` suffix, and all names are generic
@@ -35,50 +35,21 @@ npm ci
 npm run check
 ```
 
-`npm run check` type-checks the code, runs the full demo, and runs the condensed
-recording views.
+`npm run check` type-checks the code and runs the demo.
 
-## Guided recordings
-
-The same demo is split into three short recordings. Each recording clears the
-terminal between cards so the frame stays readable in GitHub.
-
-```sh
-npm run demo:shape
-npm run demo:contracts
-npm run demo:refusals
-```
-
-The GIFs are committed. Regenerating them requires
-[VHS](https://github.com/charmbracelet/vhs):
-
-```sh
-npm run recordings
-```
+## Recordings
 
 ### 1. Shape and ownership
 
 ![Shape and ownership](docs/assets/01-shape.gif)
 
-The first recording shows the tier cut, what each tier publishes, the fake
-resource plan, and the files that carry the shape.
-
 ### 2. Contracts and membership
 
 ![Contracts and membership](docs/assets/02-contracts.gif)
 
-The second recording shows consumers resolving named contracts instead of raw
-stack-output paths. It also shows the membership rule: environment owns the
-project boundary; workloads create their runtime members inside it.
-
 ### 3. Refusals before apply
 
 ![Refusals before apply](docs/assets/03-refusals.gif)
-
-The third recording fires the bad compositions deliberately: unknown service,
-undeclared capability, missing network key, missing DNS zone, duplicate DNS
-owner, invalid secret request, invalid DNS write, and a failed preview blocking
-deploy.
 
 ## Shape
 
