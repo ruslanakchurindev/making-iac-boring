@@ -1,0 +1,24 @@
+{
+  "name": "iac-example",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A simplified, provider-neutral infrastructure composition example.",
+  "scripts": {
+    "check": "npm run typecheck && npm run demo && npm run demo:views",
+    "demo": "node demo/run.ts",
+    "demo:shape": "node demo/views.ts shape",
+    "demo:contracts": "node demo/views.ts contracts",
+    "demo:refusals": "node demo/views.ts refusals",
+    "demo:views": "node demo/views.ts all",
+    "recordings": "vhs docs/tapes/01-shape.tape && vhs docs/tapes/02-contracts.tape && vhs docs/tapes/03-refusals.tape",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=22.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "typescript": "^5.6.0"
+  }
+}

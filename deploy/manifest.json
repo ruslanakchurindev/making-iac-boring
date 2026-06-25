@@ -1,0 +1,16 @@
+{
+  "stacks": {
+    "organisation": {
+      "tier": 1,
+      "environments": ["prod"]
+    },
+    "environment": {
+      "tier": 2,
+      "environments": ["dev", "test", "staging", "prod"]
+    },
+    "edge": {
+      "tier": 3,
+      "environments": ["test", "staging", "prod"]
+    }
+  }
+}
