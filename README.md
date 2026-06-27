@@ -26,6 +26,9 @@ node demo/run.ts
 The walkthrough applies the tiers in order, resolves every contract, prints the
 resource plan and release waves, then fires the refusal probes.
 
+Prefer text to a terminal? [docs/demo-output.md](docs/demo-output.md) is the
+full expected output, captured verbatim.
+
 ## Verify it
 
 Install dependencies only when running the repository checks.
@@ -38,6 +41,9 @@ npm run check
 `npm run check` type-checks the code and runs the demo.
 
 ## Recordings
+
+Short screen recordings of the walkthrough. For the same content as text, see
+[docs/demo-output.md](docs/demo-output.md).
 
 ### 1. Shape and ownership
 
