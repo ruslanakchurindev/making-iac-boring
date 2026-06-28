@@ -1,4 +1,4 @@
-# iac-example
+# making-iac-boring
 
 A runnable companion to
 [Making IaC boring](https://ruslanakchurin.dev/blog/making-iac-boring/).
